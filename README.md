@@ -16,3 +16,20 @@
 1. With your new partner, carefully go through all of the [Python object slides](http://slides.com/profdressel/python-objects-overview) together. Record your work in a Jupyter notebook ```python-classes.ipynb```. Discuss amongst yourselves anything that is new or unclear, and make comments in the notebook.
 1. In a module, ```elementary.py```, write a new class called ```Particle``` that has three attributes: ```.mass``` that is a float, as well as ```.position``` and ```.momentum``` that are tuples of three floats. Make the constructor ```.__init__(self, x, y, z)``` set the initial floats of the ```.position``` tuple to the three values ```(x, y, z)``` passed into the constructor, set the mass to ```1.0```, and set the initial momentum to ```(0.0, 0.0, 0.0)```. Give the class a method ```.impulse(self, px, py, pz)``` that takes three floats as increments for an impulse that changes the ```.momentum``` attribute by adding the increments ```(px, py, pz)``` to the existing momentum values. Give the class a method ```.move(self, dt)``` that moves the particle by one time increment ```dt``` by using its current momentum and mass values to update its position to a new value. Make sure the docstrings for the class and all methods accurately describe what units you expect for each of the attributes and values.
 1. In ```elementary.py```, write another class ```ChargedParticle``` that subclasses ```Particle``` and adds an attribute ```.charge```. Write one more class ```Electron``` that subclasses ```ChargedParticle```. When an instance of electron is created, make sure its constructor sets the charge and mass to the appropriate constants contained in the module [```scipy.constants```](https://docs.scipy.org/doc/scipy/reference/constants.html) (make sure the sign of the charge is correct for an electron).  Similarly, write a class ```Proton``` that also subclasses ```ChargedParticle``` and sets the attributes ```.charge``` and ```.mass``` to the proper values for a proton.
+
+## Assessment
+
+Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
+
+**CHANGEME**
+
+## Honor Pledge
+
+I pledge that all the work in this repository is my own with only the following exceptions:
+
+* Content of starter files supplied by the instructor;
+* Code borrowed from another source, documented with correct attribution in the code and summarized here.
+
+Signed,
+
+**YOURNAMES**
